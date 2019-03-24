@@ -8,7 +8,7 @@ import time
 def decorator(func):
     @wraps(func)  # 加这个装饰器是将原函数的__name__等属性复制到这个wrapper函数，防止某些依赖函数签名的代码发生错误
     def wrapper(*args, **kw):
-        print('%s %s()' % ('decorator', func.__name__))
+        print('%s %s()' % ('decorator', func.__name__))  # 打印: decorator now()
         func()
     return wrapper
 
