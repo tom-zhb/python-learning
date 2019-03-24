@@ -1,3 +1,6 @@
+'''
+if-else
+'''
 light = "green"
 if light == "red":
     print("Stop")

@@ -1,5 +1,7 @@
 #encoding:utf8
-#python类
+'''
+    python类
+'''
 class MyClass:
     #创建类对象时候，会先执行init
     def __init__(self):

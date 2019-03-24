@@ -1,5 +1,7 @@
 #encoding:utf8
-
+'''
+函数
+'''
 def addsum(num):
     sum = 0
     for i in num:

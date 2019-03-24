@@ -1,4 +1,7 @@
-#作用域
+#encoding:utf8
+'''
+作用域
+'''
 x = 1
 
 def changex():

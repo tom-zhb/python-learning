@@ -1,3 +1,4 @@
+#encoding:utf8
 sum = 0
 i = 1
 
