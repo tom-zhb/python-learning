@@ -11,6 +11,8 @@ class Animal(object):
 
 
 class Bird(Animal):
+    def fly(self):
+        print('fly------------Bird')
     pass
 
 
@@ -21,12 +23,12 @@ class Mammal(Animal):
 # 加个扩展功能
 class Flyable(object):
     def fly(self):
-        print('fly------------')
+        print('fly------------Flyable')
 
 
 class Runnable(object):
     def run(self):
-        print('run-----------')
+        print("run---------Runnable")
 
 
 # 这样就是多继承，加了和功能
@@ -34,7 +36,9 @@ class Dog(Mammal, Runnable):
     pass
 
 
-# 多继承从做往右继承，在父类中有相同的方法时就会先实现左边的方法，就近原则
+# 多继承从左边往右继承，在父类中有相同的方法时就会先实现左边的方法，就近原则
 class Parrot(Bird, Flyable):
     pass
 
+s = Parrot()
+s.fly()
