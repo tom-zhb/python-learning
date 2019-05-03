@@ -1,5 +1,4 @@
 #encoding:utf8
-
 import math
 
 print(math.pi)
